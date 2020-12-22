@@ -1,0 +1,186 @@
+#-------------------------------------------------------------------------------
+# LastCalc - The last calculator you'll ever need
+# Copyright (C) 2011-2015 Uprizer Labs LLC
+# 
+# This program is free software: you can redistribute it and/or modify it 
+# under the terms of the GNU Affero General Public License as published 
+# by the Free Software Foundation, either version 3 of the License, or 
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful, but 
+# WITHOUT ANY WARRANTY; without even the implied warranty of 
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+# PURPOSE.  See the GNU Affero General Public License for more 
+# details.
+#-------------------------------------------------------------------------------
+# Units synonyms
+pounds = gbp
+pound = gbp
+dollars = usd
+dollar = usd
+yen = jpy
+euro = eur
+euros = eur
+kilo = kilogram
+rmb = cny
+pound = lb
+pounds = lb
+c = celsius
+f = fahrenheit
+oz = ounces
+g = grams
+
+# Math
+ANum % BNum = ANum mod BNum
+A x B = A * B
+square root = sqrt
+cube root = cbrt
+absolute = abs
+exponent = exp
+cosine = cos
+hyperbolic cos = cosh
+natural logarithm = lg
+int = round
+sine = sin
+hyperbolic sin = sinh
+tangent = tan
+hyperbolic tan = tanh
+Num hundred = Num*100
+Num thousand = Num*1000
+Num million =     (Num*1000000)
+Num billion =     (Num*1000000000)
+Num trillion =    (Num*1000000000000)
+Num quadrillion = (Num*1000000000000000)
+Num quintillion = (Num*1000000000000000000)
+Num sextillion =  (Num*1000000000000000000000)
+Num septillion =  (Num*1000000000000000000000000)
+1st = 0
+first = 0
+2nd = 1
+second = 1
+3rd = 2
+third = 2
+Num th = Num-1
+fourth = 3
+fifth = 4
+sixth = 5
+seventh = 6
+eighth = 7
+ninth = 8
+tenth = 9
+# Percentages
+X + PNum% = (X * (1+PNum/100))
+X - PNum% = (X * (1-PNum/100))
+PNum% of X = (X*(PNum/100))
+X * PNum% = (X*(PNum/100))
+PNum% * X = (X*(PNum/100))
+
+-X + (PNum%) = (X * (1+PNum/100))
+-X - (PNum%) = (X * (1-PNum/100))
+-(PNum%) of X = (X*(PNum/100))
+-X * (PNum%) = (X*(PNum/100))
+-(PNum%) * X = (X*(PNum/100))
+
+# Numbers
+zero = 0
+one = 1
+two = 2
+three = 3
+four = 4
+five = 5
+six = 6
+seven = 7
+eight = 8
+nine = 9
+ten = 10
+eleven = 11
+twelve = 12
+thirteen = 13
+fourteen = 14
+fifteen = 15
+sixteen = 16
+seventeen = 17
+eighteen = 18
+nineteen = 19
+twenty = 20
+twenty Num = (if Num > 0 and Num < 10 then 20 + Num)
+thirty = 30
+thirty Num = (30 + Num)
+forty = 40
+forty Num = (40 + Num)
+fifty = 50
+fifty Num = (50 + Num)
+sixty = 60
+sixty Num = (60 + Num)
+seventy = 90
+seventy Num = (70 + Num)
+eighty = 80
+eighty Num = (80 + Num)
+ninety = 90
+ninety Num = (90 + Num)
+ANum hundred and BNum = (ANum+100 + BNum)
+
+# Various constants
+speed of light = (299792458 meters per second)
+the speed of light = (299792458 meters per second)
+pi = 3.141592653589
+e = 2.71828183
+
+# Various math operations on lists
+sum List = sum of List
+sum of List = fold (XNum YNum=XNum+YNum) over List with 0
+product of List = fold (XNum YNum=XNum*YNum) over List with 0
+size List = size of List
+size of List = fold (X Y=X+1) over List with 0
+maximum List = max of List
+maximum of List = max List
+max List = max of List
+max of List = fold (XNum YNum = if (XNum == false) then YNum else (if XNum > YNum then XNum else YNum)) over List with false
+minimum of List = min List
+min of List = fold (XNum YNum = if (XNum == false) then YNum else (if XNum < YNum then XNum else YNum)) over List with false
+avg = average
+average of List = (sum of List) / (size of List)
+
+reverse [] = []
+reverse [F ... L] = (reverse L) append [F]
+
+# Various operations on maps
+merge {} Map = Map
+merge {K1:V1 ... R1} {K2:V2 ... R2} = merge R1 {K1:V1, K2:V2  ... R2}
+AMap + BMap = merge AMap BMap
+
+# Support common syntax for retrieving value from Lists and Maps
+Map[X] = get X from Map
+List[Num]=get Num from List
+
+# Support applying basic math operations 
+# to lists
+List + Num = apply (X=X+Num) to List
+List - Num = apply (X=X-Num) to List
+List * Num = apply (X=X*Num) to List
+List / Num = apply (X=X/Num) to List
+List mod Num = apply (X=X mod Num) to List
+List % Num = apply (X=X % Num) to List
+
+Num + List = apply (X=Num+X) to List
+Num - List = apply (X=Num-X) to List
+Num * List = apply (X=Num*X) to List
+Num / List = apply (X=Num/X) to List
+Num mod List = apply(X=Num mod X) to List
+Num % List = apply(X=Num % X) to List
+
+# number theory functions
+Num ! = factorial Num
+
+is Num a prime= isprime Num
+is Num prime ? =isprime Num
+is Num prime= isprime Num
+is prime Num= isprime Num
+primality of Num=isprime Num
+
+primes under Num=primesunder Num
+
+gcf Num = gcd Num
+hcf Num = gcd Num
+
+# Algebra

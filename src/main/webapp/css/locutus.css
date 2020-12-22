@@ -1,0 +1,269 @@
+body,td,a,p,.h {
+	font-family: arial, sans-serif;
+}
+
+div.groups {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	font-size: 10pt;
+}
+
+div.groups a {
+	color: #000000;
+}
+
+DIV#header {
+	width: 100%;
+	margin-bottom: 30px;
+	background: rgb(76, 76, 76);
+	/*Old browsers*/
+	background: -moz-linear-gradient(-45deg, rgba(76, 76, 76, 1) 0%,
+		rgba(89, 89, 89, 1) 12%, rgba(102, 102, 102, 1) 25%,
+		rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%,
+		rgba(17, 17, 17, 1) 60%, rgba(43, 43, 43, 1) 76%, rgba(28, 28, 28, 1)
+		91%, rgba(19, 19, 19, 1) 100% );
+	/*FF3.6+*/
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(76,
+		76, 76, 1) ), color-stop(12%, rgba(89, 89, 89, 1) ),
+		color-stop(25%, rgba(102, 102, 102, 1) ),
+		color-stop(39%, rgba(71, 71, 71, 1) ),
+		color-stop(50%, rgba(44, 44, 44, 1) ),
+		color-stop(51%, rgba(0, 0, 0, 1) ),
+		color-stop(60%, rgba(17, 17, 17, 1) ),
+		color-stop(76%, rgba(43, 43, 43, 1) ),
+		color-stop(91%, rgba(28, 28, 28, 1) ),
+		color-stop(100%, rgba(19, 19, 19, 1) ) );
+	/*Chrome,Safari4+*/
+	background: -webkit-linear-gradient(-45deg, rgba(76, 76, 76, 1) 0%,
+		rgba(89, 89, 89, 1) 12%, rgba(102, 102, 102, 1) 25%,
+		rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%,
+		rgba(17, 17, 17, 1) 60%, rgba(43, 43, 43, 1) 76%, rgba(28, 28, 28, 1)
+		91%, rgba(19, 19, 19, 1) 100% );
+	/*Chrome10+,Safari5.1+*/
+	background: -o-linear-gradient(-45deg, rgba(76, 76, 76, 1) 0%,
+		rgba(89, 89, 89, 1) 12%, rgba(102, 102, 102, 1) 25%,
+		rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%,
+		rgba(17, 17, 17, 1) 60%, rgba(43, 43, 43, 1) 76%, rgba(28, 28, 28, 1)
+		91%, rgba(19, 19, 19, 1) 100% );
+	/*Opera 11.10+*/
+	background: -ms-linear-gradient(-45deg, rgba(76, 76, 76, 1) 0%,
+		rgba(89, 89, 89, 1) 12%, rgba(102, 102, 102, 1) 25%,
+		rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%,
+		rgba(17, 17, 17, 1) 60%, rgba(43, 43, 43, 1) 76%, rgba(28, 28, 28, 1)
+		91%, rgba(19, 19, 19, 1) 100% );
+	/*IE10+*/
+	background: linear-gradient(-45deg, rgba(76, 76, 76, 1) 0%,
+		rgba(89, 89, 89, 1) 12%, rgba(102, 102, 102, 1) 25%,
+		rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%,
+		rgba(17, 17, 17, 1) 60%, rgba(43, 43, 43, 1) 76%, rgba(28, 28, 28, 1)
+		91%, rgba(19, 19, 19, 1) 100% );
+	/*W3C*/
+	filter: progid:DXImageTransform.Microsoft.gradient(   startColorstr='#4c4c4c',
+		endColorstr='#131313', GradientType=1 );
+	/*IE6-9 fallback on horizontal gradient*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 1px 1px #CCCCCC;
+	-moz-box-shadow: 1px 1px 1px 1px #CCCCCC;
+	box-shadow: 1px 1px 1px 1px #CCCCCC;
+}
+
+div#logo {
+	color: #FFFFFF;
+	font-family: verdana, arial, helvetica, sans-serif;
+	text-shadow: 2px 2px 4px #000000;
+	filter: dropshadow(color =   #000000, offx =   2, offy =   2);
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.ui-button .ui-button-text
+{
+   padding: 2px !important;
+   font-size: .72em !important;
+}
+
+DIV#help-button {
+	position: absolute;
+	top:13px;
+	right:10px;
+}
+
+DIV.line {
+	padding: 5;
+	margin-left: 40px;
+	margin-right: 40px;
+	
+	margin-top: -1px;
+	border: 1px;
+	border-color: #CCC;
+	/*border-top-style: solid;*/
+	/*border-left-style: solid;*/
+	border-bottom-style: solid;
+	
+	/*border-radius: 15px;*/
+	
+}
+
+DIV.helpline {
+	padding: 5;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	border: 1px;
+	border-color: #CCC;
+	/*border-top-style: solid;*/
+}
+
+DIV.question:focus {
+	resize: none;
+	-webkit-appearance: textfield;
+    background-color: #EEEEFF;
+    /*border: 1px solid darkgray;*/
+    /*box-shadow: 1px 1px 1px 0 lightgray inset;*/
+    /*margin-top: 5px;
+    padding: 2px 3px;
+    height: 20px;*/
+    
+	width: 90%;
+	display: inline-block;
+}
+
+DIV.firstLine {
+	/*border-top-style: none;*/
+	/*margin-top: 4px;*/
+}
+
+/*DIV.lastLine {
+	border-bottom-style: solid;
+}*/
+
+DIV.question {
+	border: 2px solid #CCCCCC;
+	/*background-color: #EEEFFF;*/
+	border-radius: 4px;
+	
+	vertical-align: middle;
+	display: inline-block;
+}
+
+DIV.helpquestion {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*DIV.question.editing {
+	width: 95%;
+	display: block;
+}*/
+
+DIV.lineNumberMarker{
+	display: inline-block;
+}
+
+DIV.equals {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 0px;
+	margin-bottom: 3px;
+	width: 22px;
+	height: 22px;
+	line-height: 26px;
+	padding: 0px;
+	display: inline-block;
+	text-align: center;
+	color: #666;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6), 0 1px 0
+		rgba(255, 255, 255, 0.8);
+	font-size: 17pt;
+	font-family: Courier, monospace;
+	vertical-align: middle;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: rgb(206, 220, 231); /* Old browsers */
+	background-image: -webkit-repeating-linear-gradient(left, hsla(0, 0%, 100%, 0)
+		0%, hsla(0, 0%, 100%, 0) 6%, hsla(0, 0%, 100%, .1) 7.5% ),
+		-webkit-repeating-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%,
+		hsla(0, 0%, 0%, 0) 4%, hsla(0, 0%, 0%, .03) 4.5% ),
+		-webkit-repeating-linear-gradient(left, hsla(0, 0%, 100%, 0) 0%,
+		hsla(0, 0%, 100%, 0) 1.2%, hsla(0, 0%, 100%, .15) 2.2% ),
+		-webkit-linear-gradient(-90deg, hsl(0, 0%, 78%) 0%, hsl(0, 0%, 90%)
+		47%, hsl(0, 0%, 78%) 53%, hsl(0, 0%, 70%) 100% );
+	-webkit-box-shadow: 1px 1px 1px 1px #888;
+	-moz-box-shadow: 1px 1px 1px 1px #888;
+	box-shadow: 1px 1px 1px 1px #888;
+	
+	horizontal-align: right;
+}
+
+DIV.answer {
+	display: inline-block;
+	vertical-align: middle;
+	
+	/*not sure the following command does anything*/
+	align: right;
+	
+}
+
+DIV#worksheet {
+	width:100%;
+	height:85%;
+}
+
+DIV#helpframe {
+	overflow: auto;
+	position : fixed;
+    top      : 60px;
+    right    : 10px;
+    bottom   : 5px;
+    width    : 49%;
+    border   : 1px;
+}
+
+DIV#helpframe {
+	font-size: 11pt;
+}
+
+DIV#helpframe h1 {
+	font-size: 14pt;
+}
+
+DIV#helpframe h2 {
+	font-size: 12pt;
+}
+
+DIV#helpframe ul {
+	list-style-type: none;
+}
+
+DIV#helpframe li a {
+	text-decoration: none;
+	font-size: 8pt;
+}
+
+DIV#helpframe span.ui-button-text {
+	padding-left: 8px ! important;
+	padding-right: 8px ! important;
+}
+
+DIV#helpframe div.section {
+	clear: both;
+	padding-top: 10px;
+}
+
+DIV#helpframe div.helpquestion {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+DIV#helpframe div.line {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#simplemodal-overlay {background-color:#000;}
+#simplemodal-container {background-color:#333; border:8px solid #444; padding:12px;}
